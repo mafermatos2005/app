@@ -11,6 +11,6 @@ Arquitectura cliente-servidor de 3 capas:
 └─────────────────────┘                      └─────────────────────┘               └──────────────┘
 
 - El **frontend** consume el backend mediante `fetch()` en formato JSON.
-- El **backend** en PHP valida los datos y ejecuta consultas preparadas sobre MySQL.
+- El **backend** valida los datos y ejecuta consultas preparadas sobre MySQL.
 - La **base de datos** separa físicamente los datos públicos/semiprivados de los
   privados/sensibles en tablas distintas.
