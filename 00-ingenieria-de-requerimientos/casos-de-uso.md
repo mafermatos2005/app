@@ -1,4 +1,4 @@
-# Casos de uso (resumen)
+# Casos de uso 
 
 | Caso de uso                     | Actor principal | Descripción breve                                      |
 |----------------------------------|------------------|----------------------------------------------------------|
