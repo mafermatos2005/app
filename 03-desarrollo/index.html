@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dulce Diva | Marquesas Artesanales</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="logo">
+    <span>🍰</span>
+    <div>
+      <h1>Dulce Diva</h1>
+      <small>Marquesas artesanales</small>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a>
+    <a href="#sabores" data-es="Sabores" data-en="Flavors">Sabores</a>
+    <a href="#nosotros" data-es="Nosotros" data-en="About">Nosotros</a>
+    <a href="#registro" data-es="Contacto" data-en="Contact">Contacto</a>
+  </nav>
+
+  <div class="header-actions">
+    <div class="idiomas">
+      <button type="button" id="btn-es" class="idioma activo">ES</button>
+      <button type="button" id="btn-en" class="idioma">EN</button>
+    </div>
+    <button id="btn-carrito" class="cart-button">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span id="contador-carrito">0</span>
+    </button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="inicio" class="hero">
+  <div class="hero-content">
+    <span class="hero-tag">✨ <span data-es="Hechas con amor" data-en="Made with love">Hechas con amor</span></span>
+    <h2 data-es="El dulce que hace especial cada momento" data-en="The sweet treat that makes every moment special">
+      El dulce que hace especial cada momento
+    </h2>
+    <p data-es="Descubre nuestras deliciosas marquesas artesanales." data-en="Discover our delicious homemade marquesas.">
+      Descubre nuestras deliciosas marquesas artesanales.
+    </p>
+    <a href="#sabores" class="hero-button">
+      <span data-es="Ver nuestros sabores" data-en="See our flavors">Ver nuestros sabores</span>
+      <i class="fa-solid fa-arrow-right"></i>
+    </a>
+  </div>
+  <div class="hero-decoration">🍫 🍋 🥭</div>
+</section>
+
+<!-- ================= SABORES ================= -->
+<section id="sabores" class="productos-section">
+  <div class="section-title">
+    <span data-es="NUESTRO MENÚ" data-en="OUR MENU">NUESTRO MENÚ</span>
+    <h2 data-es="Nuestros sabores" data-en="Our flavors">Nuestros sabores</h2>
+    <p data-es="Elige tu favorita y agrégala al carrito." data-en="Choose your favorite and add it to the cart.">
+      Elige tu favorita y agrégala al carrito.
+    </p>
+  </div>
+
+  <div class="productos-container">
+    <article class="producto-card">
+      <div class="producto-imagen chocolate">
+        <div class="producto-emoji">🍫</div>
+        <span class="producto-badge" data-es="Más vendida" data-en="Best seller">Más vendida</span>
+      </div>
+      <div class="producto-info">
+        <h3 data-es="Marquesa de Chocolate" data-en="Chocolate Marquesa">Marquesa de Chocolate</h3>
+        <p data-es="Deliciosa marquesa con intenso sabor a chocolate." data-en="Delicious marquesa with an intense chocolate flavor.">
+          Deliciosa marquesa con intenso sabor a chocolate.
+        </p>
+        <div class="producto-bottom">
+          <strong>$18.000</strong>
+          <button class="add-button" onclick="agregarAlCarrito('chocolate','Marquesa de Chocolate',18000,'🍫')">
+            <i class="fa-solid fa-plus"></i> <span data-es="Agregar" data-en="Add">Agregar</span>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="producto-card">
+      <div class="producto-imagen limon">
+        <div class="producto-emoji">🍋</div>
+      </div>
+      <div class="producto-info">
+        <h3 data-es="Marquesa de Limón" data-en="Lemon Marquesa">Marquesa de Limón</h3>
+        <p data-es="Una combinación fresca, cremosa y deliciosa." data-en="A fresh, creamy and delicious combination.">
+          Una combinación fresca, cremosa y deliciosa.
+        </p>
+        <div class="producto-bottom">
+          <strong>$18.000</strong>
+          <button class="add-button" onclick="agregarAlCarrito('limon','Marquesa de Limón',18000,'🍋')">
+            <i class="fa-solid fa-plus"></i> <span data-es="Agregar" data-en="Add">Agregar</span>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="producto-card">
+      <div class="producto-imagen maracuya">
+        <div class="producto-emoji">🥭</div>
+        <span class="producto-badge" data-es="Favorita" data-en="Favorite">Favorita</span>
+      </div>
+      <div class="producto-info">
+        <h3 data-es="Marquesa de Maracuyá" data-en="Passion Fruit Marquesa">Marquesa de Maracuyá</h3>
+        <p data-es="El equilibrio perfecto entre dulce y ácido." data-en="The perfect balance between sweet and sour.">
+          El equilibrio perfecto entre dulce y ácido.
+        </p>
+        <div class="producto-bottom">
+          <strong>$19.000</strong>
+          <button class="add-button" onclick="agregarAlCarrito('maracuya','Marquesa de Maracuyá',19000,'🥭')">
+            <i class="fa-solid fa-plus"></i> <span data-es="Agregar" data-en="Add">Agregar</span>
+          </button>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= NOSOTROS ================= -->
+<section id="nosotros" class="nosotros">
+  <div class="nosotros-icon">🍰</div>
+  <div>
+    <span class="mini-title" data-es="SOBRE NOSOTROS" data-en="ABOUT US">SOBRE NOSOTROS</span>
+    <h2 data-es="Un pequeño detalle puede endulzar tu día." data-en="A small detail can sweeten your day.">
+      Un pequeño detalle puede endulzar tu día.
+    </h2>
+    <p data-es="En Dulce Diva preparamos marquesas artesanales con ingredientes seleccionados y mucho amor."
+       data-en="At Dulce Diva we make artisan marquesas with selected ingredients and lots of love.">
+      En <strong>Dulce Diva</strong> preparamos marquesas artesanales con ingredientes seleccionados y mucho amor.
+    </p>
+  </div>
+</section>
+
+<!-- ================= REGISTRO (recopilación de datos) ================= -->
+<section id="registro" class="registro-section">
+  <div class="section-title">
+    <span>👤 <span data-es="CLIENTES" data-en="CUSTOMERS">CLIENTES</span></span>
+    <h2 data-es="Regístrate con nosotros" data-en="Register with us">Regístrate con nosotros</h2>
+    <p data-es="Déjanos tus datos para facilitar tus próximos pedidos." data-en="Leave us your details to speed up your next orders.">
+      Déjanos tus datos para facilitar tus próximos pedidos.
+    </p>
+  </div>
+
+  <p class="aviso-datos" data-es="Recopilamos datos públicos (nombre), semiprivados (teléfono/correo), privados (dirección) y sensibles (alergias) solo para atender tu pedido, conforme a la Ley 1581 de 2012."
+     data-en="We collect public data (name), semi-private (phone/email), private (address) and sensitive data (allergies) only to fulfill your order, per Colombian Law 1581 of 2012.">
+    Recopilamos datos públicos (nombre), semiprivados (teléfono/correo), privados (dirección) y sensibles (alergias) solo para atender tu pedido, conforme a la Ley 1581 de 2012.
+  </p>
+
+  <form id="formCliente" class="registro-form">
+    <div class="form-group">
+      <label data-es="Nombre" data-en="Name">Nombre</label>
+      <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+    </div>
+    <div class="form-group">
+      <label data-es="Teléfono" data-en="Phone">Teléfono</label>
+      <input type="tel" id="telefono" placeholder="300 000 0000" required>
+    </div>
+    <div class="form-group">
+      <label data-es="Correo electrónico" data-en="Email">Correo electrónico</label>
+      <input type="email" id="email" placeholder="correo@ejemplo.com" required>
+    </div>
+    <div class="form-group">
+      <label data-es="Dirección de entrega" data-en="Delivery address">Dirección de entrega</label>
+      <input type="text" id="direccion" placeholder="Calle 00 # 00-00" required>
+    </div>
+    <div class="form-group">
+      <label data-es="Alergias o restricciones" data-en="Allergies or restrictions">Alergias o restricciones</label>
+      <input type="text" id="alergias" placeholder="Ej: nueces, lactosa...">
+    </div>
+    <div class="form-group form-consentimiento">
+      <input type="checkbox" id="consentimiento" required>
+      <label for="consentimiento" data-es="Autorizo el tratamiento de mis datos personales." data-en="I authorize the processing of my personal data.">
+        Autorizo el tratamiento de mis datos personales.
+      </label>
+    </div>
+    <button type="submit" class="primary-button" data-es="Registrarme" data-en="Register">Registrarme</button>
+    <p id="registroEstado" class="estado-mensaje"></p>
+  </form>
+</section>
+
+<!-- ================= REPORTE ADMINISTRATIVO ================= -->
+<section id="reporte" class="reporte-section">
+  <div class="section-title">
+    <span>📊 <span data-es="ADMINISTRACIÓN" data-en="MANAGEMENT">ADMINISTRACIÓN</span></span>
+    <h2 data-es="Reporte mensual de atención" data-en="Monthly service report">Reporte mensual de atención</h2>
+  </div>
+  <button class="primary-button" onclick="cargarReporte()" data-es="Generar reporte" data-en="Generate report">Generar reporte</button>
+  <div id="reporteResultado" class="reporte-box"></div>
+</section>
+
+<footer class="footer">
+  <p>&copy; 2026 Dulce Diva — <span data-es="Todos los derechos reservados." data-en="All rights reserved.">Todos los derechos reservados.</span></p>
+</footer>
+
+<!-- ================= CARRITO (drawer lateral) ================= -->
+<div id="overlay" class="overlay" onclick="cerrarCarrito()"></div>
+<aside id="carrito-drawer" class="carrito">
+  <div class="carrito-header">
+    <h2 data-es="Tu carrito" data-en="Your cart">Tu carrito</h2>
+    <button onclick="cerrarCarrito()" class="close-button"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div id="carrito-items" class="carrito-items"></div>
+  <div class="carrito-footer">
+    <div class="carrito-total-row">
+      <span data-es="Total" data-en="Total">Total</span>
+      <strong id="carrito-total">$0</strong>
+    </div>
+    <button id="btn-checkout" class="checkout-button" onclick="abrirCheckout()" disabled>
+      <span data-es="Finalizar pedido" data-en="Checkout">Finalizar pedido</span>
+    </button>
+  </div>
+</aside>
+
+<!-- ================= CHATBOT: BURBUJA FLOTANTE ================= -->
+<div id="chat-bubble" class="chat-bubble" onclick="toggleChat()">
+  <i class="fa-solid fa-comment-dots"></i>
+  <span id="chat-badge" class="chat-badge" hidden>1</span>
+</div>
+
+<div id="chat-window" class="chat-window">
+  <div class="chat-header">
+    <div>
+      <strong data-es="Diva · Asistente virtual" data-en="Diva · Virtual assistant">Diva · Asistente virtual</strong>
+      <small data-es="Normalmente responde al instante" data-en="Usually replies instantly">Normalmente responde al instante</small>
+    </div>
+    <button onclick="toggleChat()" class="close-button"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+
+  <div id="chat-log" class="chat-log"></div>
+
+  <div id="chat-rating" class="chat-rating" hidden>
+    <p data-es="¿Cómo calificarías la atención?" data-en="How would you rate this service?">¿Cómo calificarías la atención?</p>
+    <div class="stars">
+      <button type="button" class="star" data-valor="1">★</button>
+      <button type="button" class="star" data-valor="2">★</button>
+      <button type="button" class="star" data-valor="3">★</button>
+      <button type="button" class="star" data-valor="4">★</button>
+      <button type="button" class="star" data-valor="5">★</button>
+    </div>
+  </div>
+
+  <form id="chat-form" class="chat-input">
+    <input type="text" id="chat-input" data-es-placeholder="Escribe tu mensaje..." data-en-placeholder="Type your message..." placeholder="Escribe tu mensaje...">
+    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
