@@ -1,10 +1,9 @@
 # Manual de instalación
 
-1. Instala XAMPP (incluye PHP, MySQL y Apache): https://www.apachefriends.org
-2. Copia la carpeta del proyecto dentro de `C:\xampp\htdocs\dulce-diva`.
-3. Abre el panel de control de XAMPP e inicia los módulos **Apache** y **MySQL**.
-4. Ve a `http://localhost/phpmyadmin`, crea una base de datos y ejecuta el
-   script `base-de-datos/dulce_diva.sql`.
-5. Abre `backend/conexion.php` y confirma usuario/clave de MySQL (por defecto
-   `root` sin clave en XAMPP).
-6. Abre en el navegador: `http://localhost/dulce-diva/frontend/index.html`.
+1. Instala Node.js desde https://nodejs.org
+2. Abre una terminal en la carpeta del proyecto.
+3. Ejecuta: npm install para instalar todos los paquetes
+4. Ejecuta: npm start
+5. Debe aparecer el mensaje "Servidor ejecutándose en http://localhost:3000"
+   y se creará automáticamente el archivo dulcediva.db con las tablas.
+6. Abre index.html en el navegador.
