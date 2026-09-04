@@ -1,0 +1,9 @@
+# Análisis de riesgos
+
+| Riesgo                                             | Probabilidad | Impacto | Mitigación                                              |
+|------------------------------------------------------|--------------|---------|------------------------------------------------------------|
+| Fuga de datos sensibles (alergias, dirección)         | Media        | Alto    | Tablas separadas, acceso restringido, cifrado en tránsito (HTTPS en producción). |
+| Caída del servidor backend                            | Media        | Medio   | Mensajes de error claros en el frontend + monitoreo manual.|
+| Respuestas incorrectas del chatbot                    | Baja         | Bajo    | Reglas revisadas y respuesta por defecto que deriva a un humano. |
+| Baja tasa de registro por desconfianza en el manejo de datos | Media  | Medio   | Aviso de tratamiento de datos visible y en lenguaje claro.  |
+| Inyección SQL en formularios                           | Baja         | Alto    | Uso de consultas preparadas (PDO/mysqli) en el backend PHP. |
