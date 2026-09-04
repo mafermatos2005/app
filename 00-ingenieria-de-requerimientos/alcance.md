@@ -3,7 +3,7 @@
 **Incluye:**
 - Sitio web (HTML, CSS, JavaScript) con catálogo de sabores, formulario de registro,
   chatbot flotante e informe administrativo.
-- Backend en PHP conectado a una base de datos MySQL.
+- Backend conectado a una base de datos MySQL.
 - Registro y almacenamiento de clientes, pedidos y calificaciones de atención.
 - Generación de reporte mensual con sugerencias automáticas.
 - Traducción básica de la interfaz español/inglés.
