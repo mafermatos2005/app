@@ -1,9 +1,24 @@
-# Manual de instalación
+# INSTALACIÓN
 
-1. Instala Node.js desde https://nodejs.org
-2. Abre una terminal en la carpeta del proyecto.
-3. Ejecuta: npm install para instalar todos los paquetes
-4. Ejecuta: npm start
-5. Debe aparecer el mensaje "Servidor ejecutándose en http://localhost:3000"
-   y se creará automáticamente el archivo dulcediva.db con las tablas.
-6. Abre index.html en el navegador.
+## Requisitos
+
+Antes de instalar el sistema se debe disponer de:
+
+- Sistema operativo compatible.
+- Navegador web.
+- Git.
+- Entorno de ejecución requerido por el backend.
+- Base de datos.
+- Acceso al servicio de Inteligencia Artificial.
+
+## Pasos
+
+1. Descargar o clonar el repositorio.
+2. Instalar las dependencias.
+3. Configurar la base de datos.
+4. Ejecutar los scripts de creación.
+5. Configurar las variables de entorno.
+6. Configurar el servicio de Inteligencia Artificial.
+7. Iniciar el backend.
+8. Iniciar el frontend.
+9. Acceder a la aplicación desde el navegador.
