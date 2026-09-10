@@ -1,10 +1,16 @@
-# Casos de prueba
+# CASOS DE PRUEBA
 
-| ID   | Caso                                             | Resultado esperado                                  |
-|------|---------------------------------------------------|--------------------------------------------------------|
-| CP01 | Registrar cliente con todos los campos válidos     | Mensaje "Registro exitoso" y fila creada en `clientes`. |
-| CP02 | Registrar cliente sin marcar consentimiento        | El sistema bloquea el envío y muestra error.           |
-| CP03 | Enviar mensaje al chatbot con la palabra "sabor"   | El chatbot responde con los sabores disponibles.       |
-| CP04 | Calificar la atención con 5 estrellas               | Se guarda un registro en `atenciones` con calificacion=5.|
-| CP05 | Generar el informe mensual sin datos aún            | Muestra 0 personas atendidas y promedio 0.              |
-| CP06 | Cambiar idioma a inglés                             | Todos los textos con `data-en` cambian correctamente.  |
+| ID | Caso | Resultado esperado |
+|---|---|---|
+| CP-01 | Iniciar sesión correctamente | El usuario accede |
+| CP-02 | Iniciar sesión con datos incorrectos | Se muestra error |
+| CP-03 | Cargar PDF | El archivo es aceptado |
+| CP-04 | Cargar DOCX | El archivo es aceptado |
+| CP-05 | Cargar TXT | El archivo es aceptado |
+| CP-06 | Cargar formato no permitido | El sistema rechaza el archivo |
+| CP-07 | Clasificar documento | Se asigna una categoría |
+| CP-08 | Generar resumen | Se genera resumen |
+| CP-09 | Extraer información | Se muestran datos extraídos |
+| CP-10 | Realizar búsqueda | Se muestran resultados |
+| CP-11 | Preguntar a la IA | Se genera una respuesta |
+| CP-12 | Consultar dashboard | Se muestran indicadores |
