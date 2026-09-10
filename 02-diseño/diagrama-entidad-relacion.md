@@ -1,16 +1,93 @@
-# Diagrama entidad-relación (notación texto)
+┌──────────────────┐
+│     USUARIOS     │
+├──────────────────┤
+│ _id              │
+│ nombre           │
+│ correo           │
+│ password         │
+│ rol              │
+└────────┬─────────┘
+         │ 1
+         │
+         │ N
+┌────────▼─────────┐
+│   REPOSITORIOS   │
+├──────────────────┤
+│ _id              │
+│ nombre           │
+│ descripcion      │
+│ usuario_id       │
+└────────┬─────────┘
+         │ 1
+         │
+         │ N
+┌────────▼─────────┐
+│     CARPETAS     │
+├──────────────────┤
+│ _id              │
+│ nombre           │
+│ repositorio_id   │
+│ carpeta_padre_id │
+└────────┬─────────┘
+         │ 1
+         │
+         │ N
+┌────────▼─────────┐
+│    DOCUMENTOS    │
+├──────────────────┤
+│ _id              │
+│ nombre           │
+│ tipo             │
+│ extension        │
+│ repositorio_id   │
+│ carpeta_id       │
+│ usuario_id       │
+│ categoria        │
+│ estado            │
+└───────┬──────────┘
+        │
+        ├──────────────────┐
+        │                  │
+        ▼                  ▼
+┌────────────────┐  ┌───────────────┐
+│ PROCESAMIENTOS │  │    ERRORES    │
+├────────────────┤  ├───────────────┤
+│ _id            │  │ _id           │
+│ documento_id   │  │ documento_id  │
+│ tipo           │  │ tipo          │
+│ estado         │  │ mensaje       │
+│ fecha_inicio   │  │ fecha         │
+│ fecha_fin      │  │ estado        │
+└───────┬────────┘  └───────────────┘
+        │
+        ▼
+┌────────────────────┐
+│    RESULTADOS_IA   │
+├────────────────────┤
+│ _id                │
+│ documento_id       │
+│ procesamiento_id   │
+│ categoria          │
+│ resumen            │
+│ informacion_extraida│
+│ contenido_procesado│
+│ embeddings         │
+└────────────────────┘
 
-[CLIENTES] 1 ────── N [PEDIDOS]
-     │
-     │ 1
-     │
-     1
-[CLIENTES_PRIVADOS]
 
-[ATENCIONES]  (entidad independiente, no ligada directamente a un cliente
-               porque el chat puede usarse antes del registro)
-
-Cardinalidades:
-- Un cliente puede tener muchos pedidos (1:N).
-- Un cliente tiene exactamente un registro de datos privados (1:1).
-- Las atenciones se registran de forma anónima o asociada, según el flujo del chatbot.
+┌──────────────────┐
+│     USUARIOS     │
+└────────┬─────────┘
+         │
+         │
+         ▼
+┌──────────────────┐
+│    CONSULTAS     │
+├──────────────────┤
+│ _id              │
+│ usuario_id       │
+│ documento_id     │
+│ pregunta         │
+│ respuesta        │
+│ fecha             │
+└──────────────────┘
