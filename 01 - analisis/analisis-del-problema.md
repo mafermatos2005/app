@@ -1,15 +1,43 @@
-# Análisis del problema
+# DOCUMENTO DE ANÁLISIS
 
-**Causas:**
-- No existe un canal digital de atención permanente.
-- La información de clientes se dispersa en distintos medios (papel, chats).
-- No hay indicadores de calidad de servicio.
+## 1. Introducción
 
-**Efectos:**
-- Clientes esperan respuestas fuera del horario de atención humana.
-- Riesgo de pérdida o filtración de datos sensibles por falta de control.
-- La administración no cuenta con datos objetivos para mejorar el servicio.
+El presente documento analiza las necesidades de una empresa que requiere transformar un repositorio tradicional de documentos en un sistema inteligente capaz de organizar, procesar, buscar y consultar información.
 
-**Árbol de solución:** una plataforma web con chatbot y base de datos segregada
-por sensibilidad, junto con un módulo de reportes automatizado, ataca directamente
-las tres causas identificadas.
+## 2. Contexto empresarial
+
+La empresa cuenta con múltiples documentos almacenados digitalmente en diferentes formatos. La cantidad de información dificulta realizar búsquedas y análisis manuales.
+
+## 3. Problema identificado
+
+La información se encuentra distribuida en documentos que no poseen un mecanismo inteligente de consulta y análisis.
+
+## 4. Necesidad
+
+Se requiere una aplicación que permita gestionar documentos y utilizar Inteligencia Artificial para analizar su contenido.
+
+## 5. Solución propuesta
+
+Se propone desarrollar una aplicación web que permita cargar documentos y procesarlos automáticamente mediante Inteligencia Artificial.
+
+## 6. Funcionalidades
+
+- Autenticación.
+- Gestión documental.
+- Procesamiento de documentos.
+- Clasificación.
+- Resumen.
+- Extracción.
+- Búsqueda.
+- Consultas mediante lenguaje natural.
+- Dashboard.
+
+## 7. Actores
+
+- Usuario.
+- Administrador.
+- Sistema de Inteligencia Artificial.
+
+## 8. Conclusión
+
+El análisis demuestra la necesidad de integrar gestión documental e Inteligencia Artificial para transformar documentos no estructurados en información útil y consultable.
