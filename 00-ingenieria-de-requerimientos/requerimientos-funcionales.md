@@ -1,14 +1,65 @@
-# Requerimientos funcionales
+# REQUERIMIENTOS FUNCIONALES
 
-| ID   | Requerimiento                                                              |
-|------|------------------------------------------------------------------------------|
-| RF01 | El sistema debe mostrar el catálogo de marquesas (chocolate, limón, maracuyá). |
-| RF02 | El sistema debe permitir registrar clientes con nombre, teléfono, correo, dirección y datos sensibles opcionales. |
-| RF03 | El sistema debe exigir consentimiento explícito antes de guardar datos personales. |
-| RF04 | El sistema debe ofrecer un chatbot que responda preguntas frecuentes.       |
-| RF05 | El sistema debe permitir calificar la atención recibida del chatbot (1-5).  |
-| RF06 | El sistema debe guardar clientes, pedidos, conversaciones y calificaciones en una base de datos. |
-| RF07 | El sistema debe generar un informe mensual con personas atendidas y calificación promedio. |
-| RF08 | El sistema debe generar sugerencias automáticas para la administración según las calificaciones. |
-| RF09 | El sistema debe permitir cambiar el idioma de la interfaz entre español e inglés. |
-| RF10 | El sistema debe mostrar un aviso de tratamiento de datos antes del formulario de registro. |
+## RF-01 – Autenticación de usuarios
+
+El sistema deberá permitir que los usuarios ingresen mediante un mecanismo de autenticación.
+
+## RF-02 – Gestión de repositorios
+
+El sistema deberá permitir crear y administrar repositorios documentales.
+
+## RF-03 – Gestión de carpetas
+
+El sistema deberá permitir crear y administrar carpetas dentro de los repositorios.
+
+## RF-04 – Carga de documentos
+
+El sistema deberá permitir cargar documentos en formatos PDF, DOCX y TXT.
+
+## RF-05 – Consulta de documentos
+
+El sistema deberá permitir consultar los documentos almacenados.
+
+## RF-06 – Descarga de documentos
+
+El sistema deberá permitir descargar documentos almacenados.
+
+## RF-07 – Eliminación de documentos
+
+El sistema deberá permitir eliminar documentos según los permisos del usuario.
+
+## RF-08 – Procesamiento documental
+
+El sistema deberá extraer automáticamente el contenido de los documentos cargados.
+
+## RF-09 – Clasificación automática
+
+El sistema deberá clasificar automáticamente los documentos en mínimo tres categorías.
+
+## RF-10 – Generación de resumen
+
+El sistema deberá generar un resumen del contenido de cada documento procesado.
+
+## RF-11 – Extracción de información
+
+El sistema deberá extraer información relevante de mínimo tres tipos de documentos.
+
+## RF-12 – Búsqueda documental
+
+El sistema deberá permitir realizar búsquedas dentro del contenido de los documentos.
+
+## RF-13 – Consultas mediante lenguaje natural
+
+El sistema deberá permitir realizar preguntas sobre el contenido de los documentos.
+
+## RF-14 – Dashboard
+
+El sistema deberá mostrar indicadores relacionados con los documentos y su procesamiento.
+
+## RF-15 – Registro de errores
+
+El sistema deberá registrar los errores ocurridos durante la carga o procesamiento de documentos.
+
+## RF-16 – Estado de procesamiento
+
+El sistema deberá mostrar el estado del procesamiento de cada documento.
