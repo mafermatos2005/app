@@ -1,15 +1,13 @@
-# Planteamiento del problema
+# PLANTEAMIENTO DEL PROBLEMA
 
-Dulce Diva es un negocio de repostería artesanal dedicado a la venta de marquesas
-(chocolate, limón y maracuyá). Actualmente el proceso de toma de pedidos, registro
-de clientes y atención de dudas se realiza de forma manual, por WhatsApp o
-presencialmente, lo que genera:
+Actualmente, muchas empresas almacenan grandes cantidades de información en carpetas digitales que contienen documentos de diferentes formatos como PDF, DOCX y TXT. Este almacenamiento permite conservar la información, pero dificulta su organización, búsqueda, consulta y análisis.
 
-- Pérdida o duplicidad de información de clientes.
-- Ausencia de un canal digital disponible las 24 horas para resolver dudas frecuentes
-  (sabores, precios, horarios, domicilios).
-- Falta de indicadores objetivos sobre la calidad de la atención brindada.
-- Nula trazabilidad de las sugerencias de los clientes para la toma de decisiones.
+Cuando una empresa necesita encontrar información específica dentro de numerosos documentos, debe realizar búsquedas manuales que pueden consumir tiempo y generar dificultades para identificar rápidamente la información relevante.
 
-**Pregunta de investigación:** ¿Cómo puede una plataforma web con chatbot y base
-de datos mejorar la gestión de clientes y la calidad de la atención en Dulce Diva?
+Además, los documentos contienen información no estructurada que puede ser aprovechada mediante técnicas de Inteligencia Artificial para realizar clasificación, resumen, extracción de información y consultas mediante lenguaje natural.
+
+Por esta razón, surge la necesidad de desarrollar un Sistema Inteligente de Gestión y Análisis Documental que permita transformar un repositorio tradicional de documentos en un repositorio inteligente.
+
+El sistema permitirá cargar, consultar, descargar y eliminar documentos, procesar automáticamente su contenido mediante Inteligencia Artificial, clasificarlos, generar resúmenes, extraer información relevante y responder preguntas relacionadas con el contenido almacenado.
+
+De esta manera, la empresa podrá convertir la información documental no estructurada en información organizada, consultable y útil para apoyar sus actividades.
