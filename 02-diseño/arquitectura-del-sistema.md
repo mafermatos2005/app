@@ -1,16 +1,29 @@
-# Arquitectura del sistema
+# ARQUITECTURA GENERAL
 
-Arquitectura cliente-servidor de 3 capas:
+## Arquitectura propuesta
 
-┌─────────────────────┐      HTTP/JSON      ┌─────────────────────┐      SQL      ┌──────────────┐
-│  Frontend (cliente)  │ ───────────────────▶ │  Backend (servidor)  │ ─────────────▶ │  Base de datos │
-│  index.html          │ ◀─────────────────── │  PHP (conexion.php,  │ ◀───────────── │  MySQL         │
-│  styles.css           │                     │  clientes.php,        │               │  dulce_diva.sql│
-│  script.js             │                    │  pedidos.php,          │              │                │
-│                         │                    │  atencion.php)          │             │                │
-└─────────────────────┘                      └─────────────────────┘               └──────────────┘
+El sistema estará compuesto por cinco componentes principales:
 
-- El **frontend** consume el backend mediante `fetch()` en formato JSON.
-- El **backend** valida los datos y ejecuta consultas preparadas sobre MySQL.
-- La **base de datos** separa físicamente los datos públicos/semiprivados de los
-  privados/sensibles en tablas distintas.
+1. Frontend.
+2. Backend.
+3. Base de datos.
+4. Almacenamiento documental.
+5. Inteligencia Artificial.
+
+## Flujo
+
+Usuario
+↓
+Frontend
+↓
+Backend/API
+↓
+Base de datos
+↓
+Procesamiento documental
+↓
+Inteligencia Artificial
+↓
+Resultados
+↓
+Búsqueda y consultas
