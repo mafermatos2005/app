@@ -1,11 +1,41 @@
-# Requerimientos no funcionales
+# REQUERIMIENTOS NO FUNCIONALES
 
-| ID    | Requerimiento                                                          |
-|-------|--------------------------------------------------------------------------|
-| RNF01 | La interfaz debe usar la paleta de colores naranja, rojo y blanco.       |
-| RNF02 | El sitio debe ser responsivo (adaptable a móvil, tablet y escritorio).   |
-| RNF03 | Los datos privados y sensibles deben almacenarse en tablas separadas de los datos públicos. |
-| RNF04 | El tiempo de respuesta del chatbot no debe superar 1 segundo (respuestas por reglas). |
-| RNF05 | El código debe estar modularizado: HTML, CSS y JavaScript en archivos independientes. |
-| RNF06 | El backend debe validar los datos recibidos antes de insertarlos en la base de datos. |
-| RNF07 | El sistema debe funcionar en los navegadores Chrome, Edge y Firefox actualizados. |
+## RNF-01 – Seguridad
+
+El sistema deberá proteger las credenciales y la información de los usuarios.
+
+## RNF-02 – Usabilidad
+
+La interfaz deberá ser sencilla y permitir que los usuarios puedan realizar las operaciones principales de manera clara.
+
+## RNF-03 – Rendimiento
+
+El sistema deberá procesar las solicitudes de los usuarios en un tiempo adecuado.
+
+## RNF-04 – Compatibilidad
+
+La aplicación web deberá funcionar en navegadores modernos.
+
+## RNF-05 – Disponibilidad
+
+El sistema deberá estar disponible durante el horario definido para su utilización.
+
+## RNF-06 – Integridad
+
+La información almacenada deberá conservarse correctamente y evitar modificaciones no autorizadas.
+
+## RNF-07 – Mantenibilidad
+
+El código deberá organizarse de manera modular para facilitar futuras modificaciones.
+
+## RNF-08 – Escalabilidad
+
+La arquitectura deberá permitir incorporar nuevas funcionalidades y tipos de documentos.
+
+## RNF-09 – Privacidad
+
+No deberán utilizarse datos personales reales sin la autorización correspondiente.
+
+## RNF-10 – Protección de credenciales
+
+Las claves, API Keys y variables sensibles no deberán almacenarse directamente en el repositorio público.
