@@ -1,16 +1,32 @@
-# Alcance
+# ALCANCE Y EXCLUSIONES
 
-**Incluye:**
-- Sitio web (HTML, CSS, JavaScript) con catálogo de sabores, formulario de registro,
-  chatbot flotante e informe administrativo.
-- Backend conectado a una base de datos MySQL.
-- Registro y almacenamiento de clientes, pedidos y calificaciones de atención.
-- Generación de reporte mensual con sugerencias automáticas.
-- Traducción básica de la interfaz español/inglés.
+## Alcance
 
-**No incluye:**
-- Pasarela de pago en línea (el pedido se confirma manualmente).
-- Aplicación móvil nativa.
-- Panel de autenticación de administradores con roles (se asume acceso interno
-  de confianza al panel de reportes).
-- Chatbot con inteligencia artificial generativa (se implementa por reglas).
+El sistema permitirá:
+
+- Registrar y autenticar usuarios.
+- Administrar repositorios y carpetas.
+- Cargar documentos.
+- Consultar documentos.
+- Descargar documentos.
+- Eliminar documentos.
+- Procesar archivos PDF, DOCX y TXT.
+- Extraer el contenido de los documentos.
+- Clasificar documentos automáticamente.
+- Generar resúmenes.
+- Extraer información relevante.
+- Buscar información dentro de los documentos.
+- Realizar preguntas mediante lenguaje natural.
+- Mostrar resultados del procesamiento de Inteligencia Artificial.
+- Mostrar indicadores mediante un dashboard.
+- Registrar errores y estados de procesamiento.
+
+## Exclusiones
+
+El proyecto no contempla inicialmente:
+
+- Soporte obligatorio para todos los formatos de archivos existentes.
+- Procesamiento de información sin autorización.
+- Uso de datos personales reales sin autorización.
+- Implementación de funcionalidades empresariales que no estén relacionadas con la gestión y análisis documental.
+- Reemplazar completamente la toma de decisiones humanas.
