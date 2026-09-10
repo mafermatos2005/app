@@ -1,9 +1,14 @@
-# Análisis de riesgos
+# ANÁLISIS DE RIESGOS
 
-| Riesgo                                             | Probabilidad | Impacto | Mitigación                                              |
-|------------------------------------------------------|--------------|---------|------------------------------------------------------------|
-| Fuga de datos sensibles (alergias, dirección)         | Media        | Alto    | Tablas separadas, acceso restringido, cifrado en tránsito (HTTPS en producción). |
-| Caída del servidor backend                            | Media        | Medio   | Mensajes de error claros en el frontend + monitoreo manual.|
-| Respuestas incorrectas del chatbot                    | Baja         | Bajo    | Reglas revisadas y respuesta por defecto que deriva a un humano. |
-| Baja tasa de registro por desconfianza en el manejo de datos | Media  | Medio   | Aviso de tratamiento de datos visible y en lenguaje claro.  |
-| Inyección SQL en formularios                           | Baja         | Alto    | Uso de consultas preparadas (PDO/mysqli) en el backend PHP. |
+| ID | Riesgo | Probabilidad | Impacto | Mitigación |
+|---|---|---|---|---|
+| R-01 | Fallo durante la carga de documentos | Media | Alto | Validar archivos y formatos |
+| R-02 | La IA genera resultados incorrectos | Media | Alto | Validar resultados y realizar pruebas |
+| R-03 | Error en la extracción de contenido | Media | Alto | Implementar validaciones |
+| R-04 | Pérdida de documentos | Baja | Alto | Implementar respaldo |
+| R-05 | Exposición de credenciales | Baja | Alto | Utilizar variables de entorno |
+| R-06 | Sobrecarga del sistema | Media | Medio | Controlar tamaño y cantidad de archivos |
+| R-07 | API de IA no disponible | Media | Alto | Registrar errores y manejar excepciones |
+| R-08 | Formato de documento no compatible | Media | Medio | Validar formatos permitidos |
+| R-09 | Resultados incorrectos en búsquedas | Media | Medio | Mejorar procesamiento y búsqueda |
+| R-10 | Acceso no autorizado | Baja | Alto | Implementar autenticación y control de acceso |
